@@ -1,6 +1,5 @@
 <div>
   <% @comments.each do |comment| %>
-    <p><%= comment.username %></p>
-    <p><%= comment.content %></p>
+    <%= erb :'comment/show', :locals => {:comment => comment} %>
   <% end %>
 </div>
