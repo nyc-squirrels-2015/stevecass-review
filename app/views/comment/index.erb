@@ -1,4 +1,4 @@
-<div>
+<div class="comments">
   <% @comments.each do |comment| %>
     <%= erb :'comment/show', :locals => {:comment => comment} %>
   <% end %>

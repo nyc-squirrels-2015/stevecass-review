@@ -7,8 +7,7 @@ $(document).ready(function() {
       url: $form.attr('action'),
       data: $form.serialize()
     }).done(function(response){
-
-      // console.log("response", response)
+      $('.comments').append(response);
     })
   })
 });
